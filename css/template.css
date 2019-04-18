@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  margin: 0 auto;
+  width: 1280px;
+  height: 100%;
+  font: normal 16px Arial, sans-serif;
+}
+main {
+  width: 1180px;
+  height: 100%;
+}
+header {
+  width: 1180px;
+  height: 220px;
+  background-color: #445162;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+header div {
+  width: 50%;
+  height: 100%;
+}
+header div li {
+  font: normal 20px Arial, sans-serif;
+  color: #fff;
+  line-height: 36px;
+}
+header div li:before {
+  margin-right: 11px;
+  content: url('../img/marker-li.png');
+}
+header .logo {
+  width: 100%;
+  height: 214px;
+  text-align: right;
+}
+.product-name {
+  margin-top: -15px;
+}
+h1 {
+  margin-bottom: 27px;
+  font: normal 60px Arial, sans-serif;
+  color: #fff;
+}
+section {
+  height: 100%;
+  width: 1180px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+.about-product video {
+  width: 100%;
+  height: 100%;
+}
+.about-product .about {
+  width: 57%;
+}
+.about-product .about > p {
+  line-height: 23px;
+  margin-bottom: 15px;
+  hyphens: manual;
+}
+.about-product div {
+  width: 50%;
+}
+.about-product .video {
+  width: 36.5%;
+  height: 245px;
+}
+h3 {
+  font: normal 30px Arial, sans-serif;
+  color: #445162;
+  margin-bottom: 33px;
+  line-height: 21px;
+}
+.pluses {
+  background-color: #f5f5f5;
+  padding-bottom: 15px;
+}
+.pluses h3 {
+  flex: 0 0 100%;
+  text-align: center;
+}
+.pluses .dignity {
+  width: 50%;
+}
+.pluses .dignity li {
+  background: url('../img/marker-plus.png') no-repeat;
+  padding-left: 42px;
+  padding-bottom: 33px;
+  line-height: 22px;
+}
+.screenshots {
+  align-content: stretch;
+}
+.screenshots h3 {
+  flex: 0 0 100%;
+  text-align: center;
+  padding-left: 13px;
+  margin-bottom: 38px;
+}
+.screenshots h4 {
+  font: normal 24px Arial, sans-serif;
+  color: #445162;
+  margin-bottom: 7px;
+  margin-top: -4px;
+}
+.screenshots figure {
+  width: 50%;
+}
+.screenshots figcaption {
+  margin-bottom: 15px;
+  padding-right: 15px;
+}
+.screenshots figcaption > p {
+  line-height: 23px;
+}
+.screenshots a {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 25px;
+}
