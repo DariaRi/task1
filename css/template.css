@@ -1,0 +1,346 @@
+@font-face {
+  font-family: "Socialico";
+  src: url("../fonts/Socialico.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  margin: 0 auto;
+  width: 1280px;
+  font: normal 16px Arial, sans-serif;
+}
+header {
+  width: 1180px;
+  height: 220px;
+  background-color: #445162;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+header div {
+  width: 50%;
+  height: 100%;
+}
+header div li {
+  font: normal 20px Arial, sans-serif;
+  color: #fff;
+  line-height: 36px;
+}
+header div li:before {
+  margin-right: 11px;
+  content: url('../img/marker-li.png');
+}
+header .logo {
+  width: 100%;
+  height: 214px;
+  text-align: right;
+}
+.product-name {
+  margin-top: -15px;
+}
+h1 {
+  margin-bottom: 27px;
+  font: normal 60px Arial, sans-serif;
+  color: #fff;
+}
+section {
+  width: 1180px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+.about-product video {
+  width: 100%;
+  height: 100%;
+}
+.about-product .about {
+  width: 57%;
+}
+.about-product .about > p {
+  line-height: 23px;
+  margin-bottom: 15px;
+  hyphens: manual;
+}
+.about-product div {
+  width: 50%;
+}
+.about-product .video {
+  width: 36.5%;
+  height: 245px;
+}
+h3 {
+  font: normal 30px Arial, sans-serif;
+  color: #445162;
+  margin-bottom: 33px;
+  line-height: 21px;
+}
+.pluses {
+  background-color: #f5f5f5;
+  padding-bottom: 15px;
+}
+.pluses h3 {
+  flex: 0 0 100%;
+  text-align: center;
+}
+.pluses .dignity {
+  width: 50%;
+}
+.pluses .dignity li {
+  background: url('../img/marker-plus.png') no-repeat;
+  padding-left: 42px;
+  padding-bottom: 33px;
+  line-height: 22px;
+}
+.screenshots {
+  margin-bottom: -31px;
+}
+.screenshots h3 {
+  flex: 0 0 100%;
+  text-align: center;
+  padding-left: 13px;
+  margin-bottom: 38px;
+}
+.screenshots h4 {
+  font: normal 24px Arial, sans-serif;
+  color: #445162;
+  margin-bottom: 7px;
+  margin-top: -4px;
+}
+.screenshots figure {
+  width: 50%;
+}
+.screenshots figcaption {
+  margin-bottom: 15px;
+  padding-right: 15px;
+}
+.screenshots figcaption > p {
+  line-height: 23px;
+}
+.screenshots a {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 25px;
+}
+.reviews {
+  background-color: #f5f5f5;
+  padding-bottom: 30px;
+}
+.reviews h3 {
+  flex: 0 0 100%;
+  text-align: center;
+  margin-bottom: 38px;
+}
+.reviews .quote {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  width: 48.5%;
+  margin-bottom: 18px;
+}
+.reviews .quote a {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+.reviews .quote .avatar {
+  background-color: #445162;
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  flex: none;
+}
+.reviews .quote blockquote {
+  position: relative;
+  padding: 15px;
+  margin-left: 28px;
+  background-color: #ebebeb;
+  font-size: 14px;
+  font-style: italic;
+  border-radius: 6px;
+}
+.reviews .quote blockquote:before {
+  content: url("../img/arrow.png");
+  position: absolute;
+  top: 25px;
+  left: -11px;
+}
+.reviews .quote span {
+  display: inline-block;
+  padding-top: 15px;
+  color: #989898;
+  font-size: 14px;
+}
+.buy-now .inner-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 990px;
+  margin: 0 auto;
+  align-items: flex-end;
+}
+.buy-now .inner-wrapper h3 {
+  flex: 0 0 100%;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.buy-now .inner-wrapper .box {
+  flex-direction: column;
+  background-color: #445162;
+  width: 300px;
+  border-radius: 5px;
+}
+.buy-now .inner-wrapper .box .service {
+  line-height: 50px;
+}
+.buy-now .inner-wrapper .box span {
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+}
+.buy-now .inner-wrapper .box .price {
+  line-height: 68px;
+  font-size: 40px;
+  text-align: center;
+  color: #445162;
+  background-color: #fff;
+  border: 1.5px solid #445162;
+}
+.buy-now .inner-wrapper .box ol {
+  padding: 15px 20px;
+  line-height: 14px;
+}
+.buy-now .inner-wrapper .box ol li {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.buy-now .inner-wrapper .box button {
+  width: 260px;
+  height: 40px;
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+  color: #445162;
+  margin: 0 auto 20px;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 50px;
+  background-color: #445162;
+  width: 1280px;
+}
+footer span {
+  flex: 0 0 100%;
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+  margin-left: -48px;
+  margin-bottom: 23px;
+}
+footer .contacts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+footer .contacts form {
+  display: flex;
+  flex-direction: column;
+  margin-left: -83px;
+}
+footer .contacts form textarea {
+  width: 482px;
+  height: 151px;
+  resize: none;
+  font: normal 16px Arial, sans-serif;
+  padding: 9px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  color: #445162;
+}
+footer .contacts form input {
+  font: normal 16px Arial, sans-serif;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 24px;
+  color: #445162;
+}
+footer .contacts form .send {
+  width: 140px;
+  height: 40px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  color: #445162;
+  background-color: #fff;
+}
+footer .contacts-side {
+  display: flex;
+  flex-direction: column;
+  margin-top: -10px;
+  padding-left: 46px;
+}
+footer .contacts-side > a {
+  display: block;
+  padding: 13px 30px;
+  color: #fff;
+}
+footer .contacts-side .skype {
+  background-image: url(../img/skype-icon.png);
+  background-repeat: no-repeat;
+  background-position: 0 8px;
+}
+footer .contacts-side .isq {
+  background-image: url(../img/isq-icon.png);
+  background-repeat: no-repeat;
+  background-position: 0 8px;
+}
+footer .contacts-side .email {
+  background-image: url(../img/mail-icon.png);
+  background-repeat: no-repeat;
+  background-position: 0 8px;
+}
+footer .contacts-side .number {
+  background-image: url(../img/phone-icon.png);
+  background-repeat: no-repeat;
+  background-position: 0 8px;
+}
+footer .contacts-side .icons {
+  display: flex;
+  font-family: 'Socialico';
+  font-size: 60px;
+  color: #fff;
+  margin-top: 14px;
+}
+footer .contacts-side .icons a {
+  width: 45px;
+  height: 45px;
+  margin-right: 5px;
+}
+footer .contacts-side .icons a:link,
+footer .contacts-side .icons a:visited,
+footer .contacts-side .icons a:hover,
+footer .contacts-side .icons a:active {
+  color: #fff;
+}
