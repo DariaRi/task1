@@ -1,0 +1,27 @@
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .twitter {
+    background-image: url(../img/twitter.png);
+  }
+  .facebook {
+    background-image: url(../img/facebook.png);
+  }
+  .instagram {
+    background-image: url(../img/instagram.png);
+  }
+  .google {
+    background-image: url(../img/google.png);
+  }
+  .youtube {
+    background-image: url(../img/youtube.png);
+  }
+  footer .contacts-side .icons {
+    display: none;
+  }
+  footer .contacts-side .icons-ie {
+    display: flex;
+  }
+  footer .contacts-side .icons-ie a {
+    display: block;
+    background-size: cover;
+  }
+}

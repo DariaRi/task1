@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>template</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/template.css">
+    <link rel="stylesheet" href="css/ie.css">
 </head>
 <body>
+<!-- header section -->
     <header>
         <div class="product-name">
             <h1>Product name</h1>
@@ -16,24 +19,20 @@
                 <li>Associate this page with the payment system
             </ul>
         </div>
-        <div>
-            <div class="logo"><a href="#"><img src="img/logo.png" alt="logo"></a></div>
-        </div>
+        <a href="#"><img src="img/logo.png" alt="logo" class="logo"></a>
     </header>
+<!-- main section -->
     <main>
+        <!-- about product section -->
         <section class="about-product">
             <div class="about">
                 <h3>About your product</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum.</p>
                 <p>Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
             </div>
-            <div class="video">
-                <video controls="controls"
-                       class="video-stream"
-                       src="https://youtu.be/-_GfscbQEaM">
-                </video>
-            </div>
+            <video controls="controls" class="video-stream" src="https://youtu.be/-_GfscbQEaM" width="430" height="245"></video>
         </section>
+        <!-- dygnity and pluses section -->
         <section class="pluses">
             <h3>Dignity and pluses product</h3>
             <div class="dignity">
@@ -51,56 +50,67 @@
                 </ul>
             </div>
         </section>
+        <!-- screenshots section -->
         <section class="screenshots">
             <h3>Screenshots</h3>
             <figure>
-                <a href="#"><img src="img/screenshot.png" alt="#"></a>
+                <a href="#">
+                    <img src="img/screenshot.png" alt="#">
+                </a>
                 <figcaption>
                     <h4>The description for the image</h4>
                     <p>Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
                 </figcaption>
             </figure>
             <figure>
-                <a href="#"><img src="img/screenshot.png" alt="#"></a>
+                <a href="#">
+                    <img src="img/screenshot.png" alt="#">
+                </a>
                 <figcaption>
                     <h4>The description for the image</h4>
                     <p>Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
                 </figcaption>
             </figure>
             <figure>
-                <a href="#"><img src="img/screenshot.png" alt="#"></a>
+                <a href="#">
+                    <img src="img/screenshot.png" alt="#">
+                </a>
                 <figcaption>
                     <h4>The description for the image</h4>
                     <p>Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
                 </figcaption>
             </figure>
             <figure>
-                <a href="#"><img src="img/screenshot.png" alt="#"></a>
+                <a href="#">
+                    <img src="img/screenshot.png" alt="#">
+                </a>
                 <figcaption>
                     <h4>The description for the image</h4>
                     <p>Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
                 </figcaption>
             </figure>
         </section>
+        <!-- reviews section -->
         <section class="reviews">
             <h3>Reviews</h3>
             <div class="quote">
-                <div class="avatar"><a href="#"></a></div>
+                <a href="#" class="avatar"></a>
                 <blockquote>Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?<br><span>Lourens S</span></blockquote>
             </div>
             <div class="quote">
-                <div class="avatar"><a href="#"></a></div>
+                <a href="#" class="avatar"></a>
                 <blockquote>Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?<br><span>Lourens S</span></blockquote>
             </div>
             <div class="quote">
-                <div class="avatar"><a href="#"></a></div>
+                <a href="#" class="avatar"></a>
                 <blockquote>Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?<br><span>Lourens S</span></blockquote>
             </div>
             <div class="quote">
-                <div class="avatar"><a href="#"></a></div>
+                <a href="#" class="avatar"></a>
                 <blockquote>Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?<br><span>Lourens S</span></blockquote>
             </div>
         </section>
+        <!-- service and prices section -->
         <section class="buy-now">
             <div class="inner-wrapper">
                 <h3>Buy it now</h3>
@@ -108,10 +118,10 @@
                     <span class="service">Standart</span>
                     <span class="price">&#36;100</span>
                     <ol>
-                        <li>1. Porro officia cumque sint deleniti;
-                        <li>2. Тemo facere rem vitae odit;
-                        <li>3. Cum odio, iste quia doloribus autem;
-                        <li>4. Aperiam nulla ea neque.
+                        <li>Porro officia cumque sint deleniti;
+                        <li>Тemo facere rem vitae odit;
+                        <li>Cum odio, iste quia doloribus autem;
+                        <li>Aperiam nulla ea neque.
                     </ol>
                     <button>BUY</button>
                 </div>
@@ -119,14 +129,14 @@
                     <span class="service">Premium</span>
                     <span class="price">&#36;150</span>
                     <ol>
-                        <li>1. Porro officia cumque sint deleniti;</li>
-                        <li>2. Тemo facere rem vitae odit;</li>
-                        <li>3. Cum odio, iste quia doloribus autem;</li>
-                        <li>4. Aperiam nulla ea neque.</li>
-                        <li>5. Porro officia cumque sint deleniti; </li>
-                        <li>6. Тemo facere rem vitae odit;</li>
-                        <li>7. Cum odio, iste quia doloribus autem; </li>
-                        <li>8. Aperiam nulla ea neque.</li>
+                        <li>Porro officia cumque sint deleniti;</li>
+                        <li>Тemo facere rem vitae odit;</li>
+                        <li>Cum odio, iste quia doloribus autem;</li>
+                        <li>Aperiam nulla ea neque.</li>
+                        <li>Porro officia cumque sint deleniti; </li>
+                        <li>Тemo facere rem vitae odit;</li>
+                        <li>Cum odio, iste quia doloribus autem; </li>
+                        <li>Aperiam nulla ea neque.</li>
                     </ol>
                     <button>BUY</button>
                 </div>
@@ -134,24 +144,25 @@
                     <span class="service">Lux</span>
                     <span class="price">&#36;200</span>
                     <ol>
-                        <li>1. Porro officia cumque sint deleniti;</li>
-                        <li>2. Тemo facere rem vitae odit;</li>
-                        <li>3. Cum odio, iste quia doloribus autem;</li>
-                        <li>4. Aperiam nulla ea neque.</li>
-                        <li>5. Porro officia cumque sint deleniti; </li>
-                        <li>6. Тemo facere rem vitae odit;</li>
-                        <li>7. Cum odio, iste quia doloribus autem; </li>
-                        <li>8. Aperiam nulla ea neque.</li>
-                        <li>9. Porro officia cumque sint deleniti; </li>
-                        <li>10. Тemo facere rem vitae odit;</li>
-                        <li>11. Cum odio, iste quia doloribus autem; </li>
-                        <li>12. Aperiam nulla ea neque.</li>
+                        <li>Porro officia cumque sint deleniti;</li>
+                        <li>Тemo facere rem vitae odit;</li>
+                        <li>Cum odio, iste quia doloribus autem;</li>
+                        <li>Aperiam nulla ea neque.</li>
+                        <li>Porro officia cumque sint deleniti; </li>
+                        <li>Тemo facere rem vitae odit;</li>
+                        <li>Cum odio, iste quia doloribus autem; </li>
+                        <li>Aperiam nulla ea neque.</li>
+                        <li>Porro officia cumque sint deleniti; </li>
+                        <li>Тemo facere rem vitae odit;</li>
+                        <li>Cum odio, iste quia doloribus autem; </li>
+                        <li>Aperiam nulla ea neque.</li>
                     </ol>
                     <button>BUY</button>
                 </div>
             </div>
         </section>
     </main>
+<!-- footer -->
     <footer>
         <span>Contacts</span>
         <div class="contacts">
@@ -167,14 +178,23 @@
                 <a href="mailto:test@mail.com" class="email">psdhtmlcss@mail.ru</a>
                 <a href="#" class="number">80 00 4568 55 55</a>
                 <div class="icons">
-                    <a href="">l</a>
-                    <a href="">f</a>
-                    <a href="">i</a>
-                    <a href="">g</a>
-                    <a href="">x</a>
+                    <a href="#" class="twitter">l</a>
+                    <a href="#" class="facebook">f</a>
+                    <a href="#" class="instagram">i</a>
+                    <a href="#" class="google">g</a>
+                    <a href="#" class="youtube">x</a>
+                </div>
+                <div class="icons icons-ie">
+                    <a href="#" class="twitter"></a>
+                    <a href="#" class="facebook"></a>
+                    <a href="#" class="instagram"></a>
+                    <a href="#" class="google"></a>
+                    <a href="#" class="youtube"></a>
                 </div>
             </div>
         </div>
     </footer>
+<!-- copyrights -->
+    <span class="copyright">Copyright &copy;&nbsp;2014 Product name &middot; PSD HTML&nbsp;CSS</span>
 </body>
 </html>
