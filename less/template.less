@@ -1,0 +1,407 @@
+@width: 1280px;
+@height: 100%;
+@main-width: 1180px;
+@header-height: 220px;
+@grey-color: #445162;
+@white-color: #fff;
+@link-hover-color: #e0e2eb;
+@link-active-color: #8793ab;
+@beige-color: #f5f5f5;
+@blockquote-color: #ebebeb;
+@span-color: #989898;
+@weight-div: 50%;
+ .padding() {
+    padding: 50px;
+ }
+  .flex() {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .section() {
+    width: @main-width;
+  }
+@font-face {
+  font-family: "Socialico";
+  src: url("../fonts/Socialico.ttf");
+}
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  body {
+    margin: 0 auto;
+    width: @width;
+    font: normal 16px Arial, sans-serif;
+  }
+  header {
+    width: @main-width;
+    height: @header-height;
+    background-color: @grey-color;
+      .padding;
+      .flex;
+      div {
+        width: @weight-div;
+        height: @height;
+          li {
+            font: normal 20px Arial, sans-serif;
+            color: @white-color;
+            line-height: 36px;
+            &:before {
+              margin-right: 11px;
+              content: url('../img/marker-li.png');
+            }
+          }
+      }
+      .logo {
+        display: block;
+        height: 214px;
+        text-align: right;
+      }
+  }
+  .product-name {
+    margin-top: -15px;
+  }
+  h1 {
+    margin-bottom: 27px;
+    font: normal 60px Arial, sans-serif;
+    color: @white-color;
+  }
+
+  section {
+    .section;
+    .flex;
+    .padding;
+  }
+.about-product {
+  .about {
+    width: 57%;
+    > p {
+      line-height: 23px;
+      margin-bottom: 15px;
+      hyphens: manual;
+    }
+  }
+  div {
+    width: @weight-div;
+  }
+}
+h3 {
+  font: normal 30px Arial, sans-serif;
+  color: @grey-color;
+  margin-bottom: 33px;
+  line-height: 21px
+}
+.pluses {
+  background-color: @beige-color;
+  padding-bottom: 15px;
+  h3 {
+    flex: 0 0 100%;
+    text-align: center;
+  }
+  .dignity {
+    width: 50%;
+    li {
+      background: url('../img/marker-plus.png') no-repeat;
+      padding-left: 42px;
+      padding-bottom: 33px;
+      line-height: 22px;
+    }
+  }
+}
+.screenshots {
+  //align-content: stretch;
+  margin-bottom: -31px;
+  h3 {
+    flex: 0 0 100%;
+    text-align: center;
+    padding-left: 13px;
+    margin-bottom: 38px;
+  }
+  h4 {
+    font: normal 24px Arial, sans-serif;
+    color: @grey-color;
+    margin-bottom: 7px;
+    margin-top: -4px;
+  }
+  figure {
+    width: 50%;
+  }
+  figcaption {
+    margin-bottom: 15px;
+    padding-right: 15px;
+    > p {
+      line-height: 23px;
+    }
+  }
+  a {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 25px;
+  }
+}
+.reviews {
+  background-color: @beige-color;
+  padding-bottom: 30px;
+  h3 {
+    flex: 0 0 100%;
+    text-align: center;
+    margin-bottom: 38px;
+  }
+  .quote {
+    .flex;
+    flex-wrap: nowrap;
+    width: 48.5%;
+    margin-bottom: 18px;
+    .avatar {
+      display: block;
+      background-color: @grey-color;
+      border-radius: 50%;
+      height: 75px;
+      width: 75px;
+      flex: none;
+    }
+    blockquote {
+      position: relative;
+      padding: 15px;
+      margin-left: 28px;
+      background-color: @blockquote-color;
+      font-size: 14px;
+      font-style: italic;
+      border-radius: 6px;
+      &:before {
+        content: url("../img/arrow.png");
+        position: absolute;
+        top: 25px;
+        left: -11px;
+      }
+    }
+    span {
+      display: inline-block;
+      padding-top: 15px;
+      color: @span-color;
+      font-size: 14px;
+    }
+  }
+}
+
+.buy-now {
+  .inner-wrapper {
+    .flex();
+    width: 990px;
+    margin: 0 auto;
+    align-items: flex-end;
+    h3 {
+      flex: 0 0 100%;
+      text-align: center;
+      margin-bottom: 35px;
+    }
+    .box {
+      flex-direction: column;
+      background-color: @grey-color;
+      width: 300px;
+      border-radius: 5px;
+      .service {
+        line-height:50px;
+      }
+      span {
+        display: block;
+        text-align: center;
+        font-size: 24px;
+        color: @white-color;
+      }
+      .price {
+        line-height: 68px;
+        font-size: 40px;
+        text-align: center;
+        color: @grey-color;
+        background-color: @white-color;
+        border: 1.5px solid @grey-color;
+      }
+      ol {
+        padding: 15px 20px;
+        line-height: 14px;
+        li {
+          list-style-type: decimal;
+          list-style-position: inside;
+          font-size: 14px;
+          color: @white-color;
+          margin-bottom: 10px;
+        }
+      }
+      button {
+        width: 260px;
+        height: 40px;
+        display: block;
+        font-weight: bold;
+        font-size: 18px;
+        color: @grey-color;
+        margin: 0 auto 20px;
+        text-transform: uppercase;
+        background-color: @white-color;
+        border: none;
+        border-radius: 5px;
+      }
+      button:hover {
+        color: @white-color;
+        background-color: @grey-color;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      }
+      button:active {
+        color: @white-color;
+        background-color: @grey-color;
+        font-size: 16px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.7);
+      }
+      button:focus {
+        outline: none;
+      }
+    }
+  }
+}
+footer {
+  .flex();
+  .padding();
+  background-color: @grey-color;
+  width: 1180px;;
+  span {
+    flex: 0 0 100%;
+    text-align: center;
+    font-size: 30px;
+    color: @white-color;
+    margin-left: -48px;
+    margin-bottom: 23px;
+  }
+  .contacts {
+    .flex();
+    margin: 0 auto;
+    form {
+      display: flex;
+      flex-direction: column;
+      margin-left: -83px;
+      textarea {
+        width: 482px;
+        height: 151px;
+        resize: none;
+        font: normal 16px Arial, sans-serif;
+        padding: 9px;
+        border: none;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        color: @grey-color;
+      }
+      input {
+        font: normal 16px Arial, sans-serif;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        margin-bottom: 24px;
+        color: @grey-color;
+      }
+      .send {
+        width: 140px;
+        height: 40px;
+        margin: 0 auto;
+        text-transform: uppercase;
+        display: block;
+        font-weight: bold;
+        color: @grey-color;
+        background-color: @white-color;
+      }
+      .send:hover {
+        color: @white-color;
+        background-color: @grey-color;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      }
+      .send:active {
+        color: @white-color;
+        background-color: @grey-color;
+        font-size: 15px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.7);
+      }
+      .send:focus {
+        outline: none;
+      }
+    }
+    }
+    .contacts-side {
+      display: flex;
+      flex-direction: column;
+      margin-top: -10px;
+      padding-left: 46px;
+      > a {
+        display: block;
+        padding: 13px 30px;
+        color: @white-color;
+      }
+      a:hover {
+        color: @link-hover-color
+      }
+      a:active {
+        color: @link-active-color;
+      }
+      .skype {
+        background-image: url(../img/skype-icon.png);
+        background-repeat: no-repeat;
+        background-position: 0 8px;
+      }
+      .isq {
+        background-image: url(../img/isq-icon.png);
+        background-repeat: no-repeat;
+        background-position: 0 8px;
+      }
+      .email {
+        background-image: url(../img/mail-icon.png);
+        background-repeat: no-repeat;
+        background-position: 0 8px;
+      }
+      .number {
+        background-image: url(../img/phone-icon.png);
+        background-repeat: no-repeat;
+        background-position: 0 8px;
+      }
+      .icons {
+        display: flex;
+        font-family: 'Socialico';
+        font-size: 60px;
+        color: @white-color;
+        margin-top: 14px;
+        a {
+          width: 45px;
+          height: 45px;
+          margin-right: 5px;
+        }
+        a:link,
+        a:visited {
+          color: @white-color;
+        }
+        a:hover {
+          color: @link-hover-color;
+        }
+        a:active {
+          color: @link-active-color;
+          font-size: 58px;
+        }
+      }
+      .icons-ie {
+        display: none;
+      }
+    }
+}
+.copyright {
+  display: block;
+  font-size: 12px;
+  text-align: center;
+  padding: 5px;
+  margin: 0 auto;
+  color: @grey-color;
+  background-color: @beige-color;
+}
+
+
