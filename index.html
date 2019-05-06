@@ -10,6 +10,13 @@
 <body>
 <!-- header section -->
     <header>
+        <div class="video-container">
+            <div class="filter"></div>
+            <video autoplay loop muted playsinline class="fillWidth">
+                <source src="video/Steaming-Yellowstone.mp4"
+                        type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            </video>
+        </div>
         <div class="product-name">
             <h1>Product name</h1>
             <ul>
@@ -19,7 +26,7 @@
                 <li>Associate this page with the payment system
             </ul>
         </div>
-        <a href="#"><img src="img/logo.png" alt="logo" class="logo"></a>
+<!--        <a href="#"><img src="img/airplane.svg" alt="logo" class="logo" title="logo airplane"></a>-->
     </header>
 <!-- main section -->
     <main>
@@ -30,7 +37,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum.</p>
                 <p>Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
             </div>
-            <video controls="controls" class="video-stream" src="https://youtu.be/-_GfscbQEaM" width="430" height="245"></video>
+            <video muted playsinline controls="controls" class="video-stream" src="video/Sand-Slow-Walk.mp4" width="430" height="245"></video>
         </section>
         <!-- dygnity and pluses section -->
         <section class="pluses">
@@ -55,7 +62,7 @@
             <h3>Screenshots</h3>
             <figure>
                 <a href="#">
-                    <img src="img/screenshot.png" alt="#">
+                    <img src="img/screenshot-1.jpg" alt="screenshot" title="screenshot" width="200" height="150">
                 </a>
                 <figcaption>
                     <h4>The description for the image</h4>
@@ -64,7 +71,7 @@
             </figure>
             <figure>
                 <a href="#">
-                    <img src="img/screenshot.png" alt="#">
+                    <img src="img/screenshot-2.jpg" alt="screenshot" title="screenshot" width="200" height="150">
                 </a>
                 <figcaption>
                     <h4>The description for the image</h4>
@@ -73,7 +80,7 @@
             </figure>
             <figure>
                 <a href="#">
-                    <img src="img/screenshot.png" alt="#">
+                    <img src="img/screenshot-3.jpg" alt="screenshot" title="screenshot" width="200" height="150">
                 </a>
                 <figcaption>
                     <h4>The description for the image</h4>
@@ -82,7 +89,7 @@
             </figure>
             <figure>
                 <a href="#">
-                    <img src="img/screenshot.png" alt="#">
+                    <img src="img/screenshot-4.jpg" alt="screenshot" title="screenshot" width="200" height="150">
                 </a>
                 <figcaption>
                     <h4>The description for the image</h4>
@@ -94,19 +101,19 @@
         <section class="reviews">
             <h3>Reviews</h3>
             <div class="quote">
-                <a href="#" class="avatar"></a>
+                <a href="#" class="avatar"><img src="img/avatar-1.jpg" alt="avatar" title="avatar" width="75" height="75"></a>
                 <blockquote>Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?<br><span>Lourens S</span></blockquote>
             </div>
             <div class="quote">
-                <a href="#" class="avatar"></a>
+                <a href="#" class="avatar"><img src="img/avatar-2.jpg" alt="avatar" title="avatar" width="75" height="75"></a>
                 <blockquote>Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?<br><span>Lourens S</span></blockquote>
             </div>
             <div class="quote">
-                <a href="#" class="avatar"></a>
+                <a href="#" class="avatar"><img src="img/avatar-3.jpg" alt="avatar" title="avatar" width="75" height="75"></a>
                 <blockquote>Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?<br><span>Lourens S</span></blockquote>
             </div>
             <div class="quote">
-                <a href="#" class="avatar"></a>
+                <a href="#" class="avatar"><img src="img/avatar-4.jpg" alt="avatar" title="avatar" width="75" height="75"></a>
                 <blockquote>Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?<br><span>Lourens S</span></blockquote>
             </div>
         </section>
@@ -196,5 +203,6 @@
     </footer>
 <!-- copyrights -->
     <span class="copyright">Copyright &copy;&nbsp;2014 Product name &middot; PSD HTML&nbsp;CSS</span>
+    <script src="js/modernizr-custom.js"></script>
 </body>
 </html>
